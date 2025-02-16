@@ -17,14 +17,14 @@ abstract class UserRepository {
 
   Future<void> updateUser({
     required int id,
-    String name,
-    String username,
-    String email,
-    String phone,
-    String website,
-    Company company,
-    Address address,
+    String? name,
+    String? username,
+    String? email,
+    String? phone,
+    String? website,
+    Company? company,
+    Address? address,
   });
 
-  Future<void> deleteUser({int id});
+  Future<void> deleteUser({required int id});
 }

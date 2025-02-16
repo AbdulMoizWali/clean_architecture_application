@@ -9,7 +9,12 @@ abstract class TodoRepository {
     required bool completed,
   });
 
-  Future<void> updateTodo({int id, int userId, String title, bool completed});
+  Future<void> updateTodo({
+    required int id,
+    int? userId,
+    String? title,
+    bool? completed,
+  });
 
-  Future<void> deleteTodo({int id});
+  Future<void> deleteTodo({required int id});
 }
