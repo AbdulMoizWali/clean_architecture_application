@@ -3,8 +3,8 @@ import 'dart:convert';
 import '../../dto/todo_dto.dart';
 import 'api.dart';
 
-class UserApi extends IApi {
-  UserApi() : super(routeName: "todos");
+class TodoApi extends IApi {
+  TodoApi() : super(routeName: "todos");
 
   Future<List<TodoDto>> getTodos() async {
     final response = await getApi();
